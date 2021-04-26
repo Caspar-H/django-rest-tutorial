@@ -35,3 +35,21 @@ class Snippet(models.Model):
         self.highlighted = highlight(self.code, lexer, formatter)
         super(Snippet, self).save(*args, **kwargs)
 
+
+class Book(models.Model):
+    name = models.CharField(max_length=255)
+    isbn_number = models.CharField(max_length=13)
+
+    class Meta:
+        db_table = 'book'
+
+    def __str__(self):
+        return self.name
+
+
+class Bird(models.Model):
+    common_name = models.CharField(max_length=250)
+    scientific_name = models.CharField(max_length=250)
+
+    def __str__(self):
+        return self.common_name
