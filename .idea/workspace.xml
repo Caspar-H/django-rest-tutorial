@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b12d147a-842c-4272-ac9a-b7bb145a0991" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tutorial.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/formset/add_bird3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formset/add_bird3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +107,7 @@
       <workItem from="1618207186048" duration="624000" />
       <workItem from="1619138501626" duration="7562000" />
       <workItem from="1619152956517" duration="8769000" />
-      <workItem from="1619399344424" duration="319000" />
+      <workItem from="1619399344424" duration="8737000" />
     </task>
     <servers />
   </component>
@@ -132,5 +135,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1619424737846">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/1920.10.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1619424737846" />
   </component>
 </project>
