@@ -16,7 +16,28 @@ class BookForm(forms.Form):
 
 BookFormset = formset_factory(BookForm, extra=1)
 
-
 BirdFormSet = modelformset_factory(
     Bird, fields=("common_name", "scientific_name"), extra=1
 )
+
+from django.forms import ModelForm
+from .models import Comics, Author
+
+
+class ComicsForm(ModelForm):
+    class Meta:
+        model = Comics
+        fields = [
+            "title",
+            "author",
+            "price",
+            "publish",
+        ]
+
+
+class AuthorForm(forms.ModelForm):
+    class Meta:
+        model = Author
+        fields = [
+            "name"
+        ]

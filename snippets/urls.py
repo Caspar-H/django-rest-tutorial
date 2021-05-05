@@ -1,6 +1,7 @@
 from django.urls import path, include
 from snippets import views
 from rest_framework.urlpatterns import format_suffix_patterns
+from django.conf.urls import url
 
 app_name = 'snippets'
 
@@ -18,12 +19,20 @@ urlpatterns = [
     path('bird_list/', views.BirdListView.as_view(), name="bird_list")
 ]
 
-
 urlpatterns += [
     path('api-auth/', include('rest_framework.urls')),
     path('', views.api_root),
     path('snippets/<int:pk>/highlight', views.SnippetHighlight.as_view(), name='snippet-highlight'),
 ]
 
-urlpatterns = format_suffix_patterns(urlpatterns)
-
+urlpatterns += [
+    # url(r'^book/create', views.ComicsCreate, name="BookCreate"),
+    # url(r'^author/create', views.AuthorCreatePopup, name="AuthorCreate"),
+    # url(r'^author/(?P<pk>\d+)/edit', views.AuthorEditPopup, name="AuthorEdit"),
+    # url(r'^author/ajax/get_author_id', views.get_author_id, name="get_author_id"),
+    path('comics/create/', views.ComicsCreate, name="ComicsCreate"),
+    path('author/create/', views.AuthorCreatePopup, name="AuthorCreate"),
+    path('author/<int:pk>/edit/', views.AuthorEditPopup, name="AuthorEdit"),
+    path('author/ajax/get_author_id/', views.get_author_id, name="get_author_id"),
+]
+# urlpatterns = format_suffix_patterns(urlpatterns)

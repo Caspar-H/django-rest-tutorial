@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+from django.utils import timezone
 from pygments.lexers import get_all_lexers
 from pygments.styles import get_all_styles
 
@@ -53,3 +54,22 @@ class Bird(models.Model):
 
     def __str__(self):
         return self.common_name
+
+
+
+# Add/Edit button on Form
+class Author(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
+
+class Comics(models.Model):
+    title = models.CharField(max_length=100)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    price = models.DecimalField(max_digits=12, decimal_places=4, default=0)
+    publish = models.DateField(default=timezone.now)
+
+    def __str__(self):
+        return self.title
