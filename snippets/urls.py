@@ -7,16 +7,22 @@ app_name = 'snippets'
 
 urlpatterns = [
     # path('snippets/', views.snippet_list),
-    path('snippets/', views.SnippetList.as_view(), name='snippet-list'),
-    # # path('snippets/<int:pk>/', views.snippet_detail),
-    path('snippets/<int:pk>/', views.SnippetDetail.as_view(), name='snippet-detail'),
-    path('users/', views.UserList.as_view(), name='user-list'),
-    path('users/<int:pk>/', views.UserDetail.as_view(), name='user-detail'),
+    # path('snippets/', views.SnippetList.as_view(), name='snippet-list'),
+    # # # path('snippets/<int:pk>/', views.snippet_detail),
+    # path('snippets/<int:pk>/', views.SnippetDetail.as_view(), name='snippet-detail'),
+    # path('users/', views.UserList.as_view(), name='user-list'),
+    # path('users/<int:pk>/', views.UserDetail.as_view(), name='user-detail'),
 
     path('create_book_normal/', views.create_book_normal, name='create_book_normal'),
     path('book_list/', views.BookList.as_view(), name='book_list'),
     path('add_bird/', views.BirdAddView.as_view(), name="add_bird"),
-    path('bird_list/', views.BirdListView.as_view(), name="bird_list")
+    path('bird_list/', views.BirdListView.as_view(), name="bird_list"),
+
+    path('person_list/', views.PersonListView.as_view(), name='person_changelist'),
+    path('person_add/', views.PersonCreateView.as_view(), name='person_add'),
+    path('person_change/<int:pk>/', views.PersonUpdateView.as_view(), name='person_change'),
+    path('ajax/load-cities/', views.load_cities, name='ajax_load_cities'),
+    path('ajax/load-models/', views.load_model_type, name='ajax_load_models'),
 ]
 
 urlpatterns += [
