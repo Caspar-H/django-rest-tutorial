@@ -40,7 +40,7 @@ class BirdListView(ListView):
 
 
 class BirdAddView(TemplateView):
-    template_name = "formset/add_bird3.html"
+    template_name = "formset/add_bird.html"
 
     # Define method to handle GET request
     def get(self, *args, **kwargs):
