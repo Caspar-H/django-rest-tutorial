@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b12d147a-842c-4272-ac9a-b7bb145a0991" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/views/formset_tutorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/views/formset_tutorial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/formset/add_bird.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formset/add_bird.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +59,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -138,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -164,6 +163,8 @@
       <workItem from="1619569780808" duration="15898000" />
       <workItem from="1619651024556" duration="603000" />
       <workItem from="1620181095110" duration="20000" />
+      <workItem from="1621399735433" duration="2019000" />
+      <workItem from="1621404212394" duration="2592000" />
     </task>
     <servers />
   </component>

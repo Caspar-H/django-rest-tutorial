@@ -1,0 +1,10 @@
+digraph "Web Service" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Web Service" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	"50b91b8eab7647a9bacfd151179c4cc6" [label=lb height=1.9 image="C:\Python Project\004 Django Tutorial\env\lib\site-packages\resources/aws/network\elastic-load-balancing.png" shape=none]
+	b892c36311954b6c836bbf5a5bd5d7dc [label=web height=1.9 image="C:\Python Project\004 Django Tutorial\env\lib\site-packages\resources/aws/compute\ec2.png" shape=none]
+	"50b91b8eab7647a9bacfd151179c4cc6" -> b892c36311954b6c836bbf5a5bd5d7dc [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"20e1a678a3db4558a29d0db206eebbee" [label=userdb height=1.9 image="C:\Python Project\004 Django Tutorial\env\lib\site-packages\resources/aws/database\rds.png" shape=none]
+	b892c36311954b6c836bbf5a5bd5d7dc -> "20e1a678a3db4558a29d0db206eebbee" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}
